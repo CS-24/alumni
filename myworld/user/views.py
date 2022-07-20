@@ -16,3 +16,7 @@ def userView(request):
     }
     
     return render(request, "create_user.html",context)
+
+def front(request):
+    context = { }
+    return render(request, "index.html", context)

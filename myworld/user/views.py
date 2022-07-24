@@ -15,7 +15,7 @@ def userView(request):
         'form': form
     }
     
-    return render(request, "create_user.html",context)
+    return render(request, "index.html", context)
 
 def front(request):
     context = { }

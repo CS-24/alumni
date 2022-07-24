@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #own
     'user',
+    'members',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +60,9 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             "templates",
-            os.path.join(BASE_DIR, 'alumni-app', 'build')
+            os.path.join(BASE_DIR, 'alumni-app', 'build' ),
+            os.path.join(BASE_DIR, 'alumni-app', 'src', 'frontend','pages' ),
+            os.path.join(BASE_DIR, 'members', 'templates','authentication')
         ],
         'APP_DIRS': True,
         'OPTIONS': {

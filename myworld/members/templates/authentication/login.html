@@ -1,0 +1,11 @@
+{% extends '<templates>base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<form method = "POST" action = "">
+    {% csrf_token %}
+
+    <input type = "submit" value = "submit"> 
+</form>
+
+{% endblock %}

@@ -16,4 +16,4 @@ def signupView(request):
         'form' : form
     }
 
-    return render(request, "create_user.html",context)
+    return render(request, "signup_user.html",context)

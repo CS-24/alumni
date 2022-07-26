@@ -8,7 +8,7 @@ from .models import User
 
 def signupView(request):
     form = userForm(request.POST or None)
-    if (form.ins_valid()):
+    if (form.is_valid()):
         form.save()
         form = userForm()
     

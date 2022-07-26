@@ -3,7 +3,7 @@ from django.urls import path, include
 from django.views.generic.base import TemplateView # new
 from user.views import userView
 from user.views import front
-from signup.views import signupView, front
+from signup.views import signupView
 
 
 urlpatterns = [
